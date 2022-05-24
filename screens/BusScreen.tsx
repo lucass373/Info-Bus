@@ -27,7 +27,7 @@ export default function BusScreen() {
       <Stack.Navigator>
         <Stack.Screen name="Root" component={BusScreen1} options={{ title: 'Linhas',headerShown: true, headerRight:() => <TouchableOpacity style={{height: 50, width: 50, borderColor: 'black', borderWidth: 2, borderRadius: 25, alignItems: 'center', justifyContent: 'center', marginRight: 20}}><FontAwesome size={30} name="user"/></TouchableOpacity>,}} />
         <Stack.Screen name="LinhaScreen" component={LinhaScreen} options={{title:'Itaboraí', headerRight:()=> <TouchableOpacity style={{height: 40, width: 40, borderColor: 'black', borderWidth: 2, borderRadius: 25, alignItems: 'center', justifyContent: 'center', marginRight: 20}}><FontAwesome size={20} name="search"/></TouchableOpacity>}}/>
-        <Stack.Screen name="ChatScreen" component={ChatScreen}/>
+        <Stack.Screen name="ChatScreen" component={ChatScreen} options={{title: '413M V. das Pedras x Niterói'}}/>
       </Stack.Navigator>
     );
   }

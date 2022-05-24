@@ -18,6 +18,8 @@ import HomeScreen from '../screens/HomeScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import BusScreen from '../screens/BusScreen';
 import ChatScreen from '../screens/ChatScreen';
+import FavScreen from '../screens/FavScreen';
+import PerfScreen from '../screens/PerfScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -42,6 +44,7 @@ function RootNavigator() {
     <Stack.Navigator>
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+      <Stack.Screen name="ChatScreen" component={ChatScreen} options={{}} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
       </Stack.Group>
@@ -98,18 +101,19 @@ function BottomTabNavigator() {
         }}
       />
        <BottomTab.Screen
-        name="TabTwo0"
-        component={TabTwoScreen}
+        name="FavScreen"
+        component={FavScreen}
         options={{
-          title: 'Tab Two',
+          title: 'Favoritos',
           tabBarIcon: ({ color }) => <TabBarIcon name="star" color={color} />,
+          headerRight:() => <TouchableOpacity style={{height: 50, width: 50, borderColor: 'black', borderWidth: 2, borderRadius: 25, alignItems: 'center', justifyContent: 'center', marginRight: 20}}><TabBarIcon name="user"/></TouchableOpacity>,
         }}
       />
        <BottomTab.Screen
-        name="TabTwo1"
-        component={TabTwoScreen}
+        name="PerfScreen"
+        component={PerfScreen}
         options={{
-          title: 'Tab Two',
+          title: 'Perfil',
           tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
         }}
       />
