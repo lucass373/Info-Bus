@@ -1,10 +1,10 @@
-import { Text, View, StyleSheet, ScrollView } from "react-native";
+import { Text, View, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { RootTabScreenProps } from "../types";
 import { Entypo } from '@expo/vector-icons'; 
 
 export default function ChatScreen({ navigation }: RootTabScreenProps<'ChatScreen'>){
     return(
-        <View>
+        <View style={{flex: 1}}>
     <ScrollView contentContainerStyle={{alignItems: 'flex-start'}}>
         <View style={{alignItems: 'center'}}>
         <View style={{flexDirection: 'row', marginTop: 20, }}>
@@ -45,12 +45,29 @@ export default function ChatScreen({ navigation }: RootTabScreenProps<'ChatScree
         </View>
         </View>
     </ScrollView>
+    <View style={styles.msgView}>
+    <ScrollView contentContainerStyle={{flexWrap: 'wrap', flexDirection: 'column', height: 100}} horizontal={true}>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Ônibus Atrasado</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Trânsito Congestionado</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Ônibus Atrasado</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Ônibus Atrasado</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Ônibus Atrasado</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Ônibus Atrasado</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Ônibus Atrasado</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.opView}><Text style={styles.opText}>Ônibus Atrasado</Text></TouchableOpacity>
+        </ScrollView>
+        </View>
     </View>
     )
 }
 const styles= StyleSheet.create({
     container:{
         flex: 1,
+    },
+    opText:{
+        fontWeight: 'bold',
+        fontSize: 13
+        
     },
     itemView:{
         height: 100,
@@ -59,5 +76,20 @@ const styles= StyleSheet.create({
         borderWidth: 2,
         borderRadius: 15,
         alignItems: 'center'
+    },
+    msgView:{
+        borderTopColor: 'black',
+        borderTopWidth: 2,
+    },
+    opView:{
+        borderColor: 'black',
+        borderWidth: 2,
+        height: 35,
+        width: 150,
+        marginTop: 10,
+        marginLeft: 10,
+        borderRadius: 15,
+        alignItems: 'center',
+        justifyContent: 'center',     
     },
 })
