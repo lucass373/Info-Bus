@@ -1,6 +1,7 @@
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { RootTabScreenProps } from "../types";
 import { Entypo } from '@expo/vector-icons'; 
+import {db } from '../firebase/firebase'
 
 export default function ChatScreen({ navigation }: RootTabScreenProps<'ChatScreen'>){
     return(
