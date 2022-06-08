@@ -18,7 +18,7 @@ export type RootStackParamList = {
   Modal: undefined;
   NotFound: undefined;
   LinhaScreen: undefined;
-  ChatScreen: undefined;
+  ChatScreen: Screen;
   FavScreen: undefined;
   PerfScreen: undefined;
 };
@@ -33,7 +33,7 @@ export type RootTabParamList = {
   TabTwo: undefined;
   BusScreen: undefined;
   LinhaScreen: undefined;
-  ChatScreen: undefined;
+  ChatScreen: Screen;
   FavScreen: undefined;
   PerfScreen: undefined;
 };
