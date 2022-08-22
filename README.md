@@ -1,5 +1,8 @@
-# IHM-AV2
-Aplicativo em desenvolvimento para um trabalho de faculdade com o tema trasporte público, com o intuíto dos usuários compartiplarem informações sobre as linhas de ônibus.
+# Info-Bus
+Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte público, com o intuíto dos usuários compartiplarem informações sobre as linhas de ônibus.
+
+#Tecnologias Usadas
+
 
 # Tela de Lista de Alimentos
 <img src="https://lh3.googleusercontent.com/d/1-ZRunAcEqfBuc-ZYqbzYFpTx6q4dwOhL" width="400" height="790">
