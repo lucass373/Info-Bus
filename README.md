@@ -9,6 +9,6 @@ Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte públ
 
 ## Telas 
 <img src="https://lh3.googleusercontent.com/d/1-ZRunAcEqfBuc-ZYqbzYFpTx6q4dwOhL" width="400" height="790">
-<img src="https://lh3.googleusercontent.com/d/1-MI8gkuaUbAFaTy7mEyLYPDCrrqla9Jj">
+<img src="https://lh3.googleusercontent.com/d/1-MI8gkuaUbAFaTy7mEyLYPDCrrqla9Jj" width="400" height="790">
 
 
