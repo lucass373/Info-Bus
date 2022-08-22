@@ -2,5 +2,5 @@
 Aplicativo em desenvolvimento para um trabalho de faculdade com o tema trasporte público, com o intuíto dos usuários compartiplarem informações sobre as linhas de ônibus.
 
 # Tela de Lista de Alimentos
-![test image size]<img src="https://lh3.googleusercontent.com/d/1-ZRunAcEqfBuc-ZYqbzYFpTx6q4dwOhL" width="400" height="790">
+<img src="https://lh3.googleusercontent.com/d/1-ZRunAcEqfBuc-ZYqbzYFpTx6q4dwOhL" width="400" height="790">
 
