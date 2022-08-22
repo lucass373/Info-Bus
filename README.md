@@ -21,5 +21,11 @@ Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte públ
 
 <img src="https://lh3.googleusercontent.com/d/1-ZRunAcEqfBuc-ZYqbzYFpTx6q4dwOhL" width="400" height="790">
 
+## Tela das Cidades
 
+<img src="https://lh3.googleusercontent.com/d/1-Z79snnJUnf4DzWrlmDlr9ZH5c6v04yc" width="400" height="790">
+
+## Tela das Linhas de Ônibus
+
+<img src="https://lh3.googleusercontent.com/d/1-RWmeWndLd4gYE69tUTkNHFOrZRDmqbr" width="400" height="790">
 
