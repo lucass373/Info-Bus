@@ -1,5 +1,5 @@
 # Info-Bus
-Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte público, com o intuíto dos usuários compartiplarem informações sobre as linhas de ônibus.
+Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte público, com o intuíto dos usuários compartiplarem informações sobre as linhas de ônibus com mensagens pré-definidas para evitar o mal-uso dos usuários e excesso de mensagens que não seja sobre os problemas nas linhas dos ônibus.
 
 ## Tecnologias Usadas
 - React-Native
@@ -28,4 +28,8 @@ Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte públ
 ## Tela das Linhas de Ônibus
 
 <img src="https://lh3.googleusercontent.com/d/1-RWmeWndLd4gYE69tUTkNHFOrZRDmqbr" width="400" height="790">
+
+## Tela do Chat do Ônibus
+
+<img src="https://lh3.googleusercontent.com/d/1-QpGuCCg0YDNahZLRyjIouPfv0a7hJXn" width="400" height="790">
 
