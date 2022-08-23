@@ -1,5 +1,5 @@
 # Info-Bus
-Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte público, com o intuíto dos usuários compartiplarem informações sobre as linhas de ônibus com mensagens pré-definidas para evitar o mal-uso dos usuários e excesso de mensagens que não seja sobre os problemas nas linhas dos ônibus.
+Aplicativo desenvolvido para um trabalho de faculdade com o tema trasporte público, com o intuíto dos usuários compartilharem informações sobre as linhas de ônibus em tempo-real com mensagens pré-definidas para evitar o mal-uso dos usuários e excesso de mensagens que não seja sobre os problemas nas linhas dos ônibus.
 
 ## Tecnologias Usadas
 - React-Native
