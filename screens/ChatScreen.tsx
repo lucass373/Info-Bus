@@ -4,36 +4,43 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  PermissionsAndroid,
-  Platform,
-  Alert,
-  Linking,
-  SafeAreaView,
 } from 'react-native'
-import { RootTabScreenProps } from '../types'
 import { Entypo } from '@expo/vector-icons'
 import { db } from '../firebase/firebase'
 import React, {
-  PureComponent,
-  ReactNode,
   useEffect,
-  useRef,
   useState,
 } from 'react'
 import { onValue, push, ref, set } from 'firebase/database'
-import Geolocation from 'react-native-geolocation-service'
+import * as Location from 'expo-location'
+const opencage = require('opencage-api-client');
 
-
-const onPress = (ret) => {
+//função para escrever na base de dados, chamar coordenadas e converte-las em endereço
+const onPress = async (ret) => {
   var hours = new Date().getHours()
-var minutes = new Date().getMinutes()
-  const newPostKey = push(ref(db, 'messages/')).key
+  var minutes  = new Date().getMinutes()
+  if(minutes < 10){minutes = `0${minutes}`}
+  await Location.requestForegroundPermissionsAsync()
+  const location = await Location.getCurrentPositionAsync();
+  const locationLat = location.coords.latitude
+  const locationLong = location.coords.longitude
+  opencage.geocode({ q: `${locationLat} ${locationLong}`, key: 'b0e6c885619a45eba948f42e780a39ce', language: 'pt' })
+    .then((data) => {
+    const rua = data.results[0].components.road
+    const sub = data.results[0].components.suburb
+    const newPostKey = push(ref(db, 'messages/')).key
   set(ref(db, `messages/${newPostKey}`), {
     mensagem: ret,
     hora: `${hours}:${minutes}`,
+    rua: `${rua}, ${sub}`,
   })
-}
+    })
+    .catch((error) => {
+      console.log('error', error.message);
+    });
 
+ 
+}
 export default function ChatScreen() {
   const [messages, setMessages] = useState([])
 
@@ -49,7 +56,7 @@ export default function ChatScreen() {
     })
   }, [])
 
-  function ItemComponent({ messages }) {
+  function ItemComponent({messages}) {
     return (
       <View style={styles.container}>
         {messages.map((messages: any, index: string) => {
@@ -84,7 +91,7 @@ export default function ChatScreen() {
               </View>
               <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Entypo name="location-pin" size={30} />
-                <Text style={{ fontWeight: 'bold' }}>Itaboraí</Text>
+                <Text style={{ fontWeight: 'bold' }}>{messages.rua}</Text>
               </View>
             </View>
           )
@@ -111,7 +118,7 @@ export default function ChatScreen() {
           }}
           horizontal={true}
         >
-          <TouchableOpacity onPress={() => onPress('Ônibus Atrasado')} style={styles.opView}>
+          <TouchableOpacity onPress={()=>onPress('ônibus Atrasado')} style={styles.opView}>
             <Text style={styles.opText}>Ônibus Atrasado</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => onPress('Trânsito Congestionado')} style={styles.opView}>
@@ -128,12 +135,6 @@ export default function ChatScreen() {
           </TouchableOpacity>
           <TouchableOpacity onPress={() => onPress('Motorista mal-humorado')} style={styles.opView}>
             <Text style={styles.opText}>Motorista mal-humorado</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => onPress('suco tang')} style={styles.opView}>
-            <Text style={styles.opText}>suco tang</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => onPress('suco tang2')} style={styles.opView}>
-            <Text style={styles.opText}>suco tang2</Text>
           </TouchableOpacity>
         </ScrollView>
       </View>

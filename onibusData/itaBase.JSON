@@ -1,0 +1,51 @@
+{
+"linhasIta":{
+    "413M":{
+        "destino1":"V. Das Pedras",
+        "destino2":"Niterói",
+        "messDis1":{
+        
+        },
+        "messDis2":{
+            
+        }
+    }
+    },
+"linhasSG":{
+    "482M":{
+    "destino1":"Santa Luzia",
+        "destino2":"Niterói",
+        "messDis1":{
+        
+        },
+        "messDis2":{
+            
+        }
+    }
+    },
+    "linhasRio":{
+        "760D":{
+        "destino1": "Galeão",
+        "destino2": "Miterói",
+        "messDis1":{
+        
+        },
+        "messDis2":{
+            
+        }
+    }
+},
+        "linhasNovIg":{
+            "143C":{
+            "destino1": "São João",
+            "destino2": "Miterói",
+            "messDis1":{
+            
+            },
+            "messDis2":{
+                
+            }
+    }
+}
+}
+

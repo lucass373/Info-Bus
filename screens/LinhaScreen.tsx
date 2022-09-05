@@ -11,24 +11,24 @@ export default function LinhaScreen({ navigation }: RootTabScreenProps<'LinhaScr
         <Text style={{fontSize:30}}>V. Das Pedras x Niterói</Text>
         </TouchableOpacity>
         <View style={styles.itemView}>
-        <Text style={{fontSize: 30}}>413M</Text>
-        <Text style={{fontSize:30}}>V. Das Pedras x Niterói</Text>
+        <Text style={{fontSize: 30}}>728M</Text>
+        <Text style={{fontSize:30}}>Alcantara x Itambi</Text>
         </View>
         <View style={styles.itemView}>
-        <Text style={{fontSize: 30}}>413M</Text>
-        <Text style={{fontSize:30}}>V. Das Pedras x Niterói</Text>
+        <Text style={{fontSize: 30}}>MB14</Text>
+        <Text style={{fontSize:30}}>Itaboraí x Cachoeiras de Macacu</Text>
         </View>
         <View style={styles.itemView}>
-        <Text style={{fontSize: 30}}>413M</Text>
-        <Text style={{fontSize:30}}>V. Das Pedras x Niterói</Text>
+        <Text style={{fontSize: 30}}>518M</Text>
+        <Text style={{fontSize:30}}>Mutuá x Niterói(BR-101)</Text>
         </View>
         <View style={styles.itemView}>
-        <Text style={{fontSize: 30}}>413M</Text>
-        <Text style={{fontSize:30}}>V. Das Pedras x Niterói</Text>
+        <Text style={{fontSize: 30}}>MB12</Text>
+        <Text style={{fontSize:30}}>Niteró x Saquarema</Text>
         </View>
         <View style={styles.itemView}>
-        <Text style={{fontSize: 30}}>413M</Text>
-        <Text style={{fontSize:30}}>V. Das Pedras x Niterói</Text>
+        <Text style={{fontSize: 30}}>B105</Text>
+        <Text style={{fontSize:30}}>Rio Bonito x Araruama</Text>
         </View>
     </ScrollView>
     </View>

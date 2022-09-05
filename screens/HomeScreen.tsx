@@ -8,11 +8,11 @@ export default function HomeScreen({ navigation }: RootTabScreenProps<'HomeScree
   return (
     <View style={styles.container}>
       <View style={styles.logoView}>
-      <Text style={styles.logoText}>CururuLogo</Text>
+      <Text style={styles.logoText}>InfoBus</Text>
       </View>
       <View style={{alignItems: 'center', marginTop: 40}}>
       <Text style={styles.logoText}>Bem-Vindo ao </Text>
-      <Text style={styles.logoText}>CururuBus!!</Text>
+      <Text style={styles.logoText}>InfoBus!!</Text>
       <TouchableOpacity onPress={()=>navigation.jumpTo('BusScreen')} style={styles.butView}>
         <Text style={styles.logoText}>Linhas Presentes</Text>
         </TouchableOpacity>

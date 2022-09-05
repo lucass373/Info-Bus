@@ -12,7 +12,7 @@ export default function PerfScreen(){
                <FontAwesome name='user' size={100}/>
            </View>
            <View>
-               <Text style={{fontWeight: 'bold', fontSize: 35}}>nome: Tey Tey</Text>
+               <Text style={{fontWeight: 'bold', fontSize: 35}}>nome: USUÁRIO</Text>
                <Text style={{fontWeight: 'bold', fontSize: 35}}>idade: 23 anos</Text>
                <Text style={{fontWeight: 'bold', fontSize: 35}}>_______________</Text>
                <Text style={{fontWeight: 'bold', fontSize: 35}}>_______________</Text>
