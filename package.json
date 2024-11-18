@@ -37,7 +37,7 @@
     "expo-system-ui": "~1.2.0",
     "expo-updates": "~0.13.2",
     "expo-web-browser": "~10.2.1",
-    "firebase": "9.6.11",
+    "firebase": "10.9.0",
     "idb": "^7.0.1",
     "node-geocoder": "^4.0.0",
     "opencage-api-client": "^1.0.0",
